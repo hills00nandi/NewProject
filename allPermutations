@@ -7,10 +7,12 @@ void permutations(string s,int n,int x,vector<string> &options)
         options.push_back(s);
         return;
     }
+    cout<<"it will start printing here\n";
     permutations(s+"+",n,x+1,options);
     permutations(s+"-",n,x+1,options);
     permutations(s+"*",n,x+1,options);
     permutations(s+"/",n,x+1,options);
+    cout<<"Operation End\n";
 }
 int main()
 {
